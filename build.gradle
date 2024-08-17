@@ -34,6 +34,9 @@ dependencies {
 	//테스트에서 lombok 사용
 	testCompileOnly 'org.projectlombok:lombok'
 	testAnnotationProcessor 'org.projectlombok:lombok'
+
+	// 코드 변경 시 애플리케이션을 자동으로 재시작하거나 필요한 부분만 다시 로드하여 빠르게 반영
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
 tasks.named('test') {
